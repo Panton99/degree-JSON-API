@@ -9,9 +9,12 @@ async function getData(){ //create fetch and get respons
     }).then(
         response => response.json()
     ).then(
-       response => console.log(JSON.stringify(response))
+       response => {
+	       console.log(JSON.stringify(response));
+	       console.log('status: ' + response.status);
+       }
 	
-    }).catch(error => {
+    ).catch(error => {
 	    console.log(error);
     });
 }
