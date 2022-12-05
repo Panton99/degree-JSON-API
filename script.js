@@ -33,9 +33,9 @@ function display(data) {
     for (var row of data.Degrees) {
         table += `<tr> 
    	 <td>${row.School} </td>
-   	 <td>${row.Program/Major}</td>
+   	 <td>${row.Major}</td>
    	 <td>${row.Type}</td> 
-   	 <td>${row.Yearconferred}</td>          
+   	 <td>${row.Year}</td>          
 </tr>`;
     }
 	document.getElementById("data").innerHTML = table;
