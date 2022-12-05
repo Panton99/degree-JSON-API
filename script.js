@@ -30,7 +30,7 @@ function display(data) {
         </tr>`;
     
     // Loop to access all rows 
-    for (var row of data.list) {
+    for (var row of data.Degrees) {
         table += `<tr> 
    	 <td>${row.School} </td>
    	 <td>${row.Progrma/Major}</td>
