@@ -10,9 +10,18 @@ async function getData(){ //create fetch and get response
         response => response.json()
     ).then(
        response => console.log(JSON.stringify(response))
+       printData(response);
     )
     .catch(error => {
 	    console.log(error);
     });
-	document.getElementById("data").textContent = JSON.stringify(JSON.parse(response), undefined, 2);
+}
+
+function printData(data) {
+    var print = document.getElementById("data");
+    for (var i = 0; i < data.length; i++) {
+       var element = document.createElement("element");
+       element.innerHTML = 'University: ' + data[i].School + ', Program/Major: ' + data[i].Program/Major + ', Type: ' + data[i].Type + ', Year conferred: ' + data[i].Year conferred;
+       print.appendChild(element);
+    }
 }
