@@ -7,8 +7,10 @@ async function getData(){ //create fetch and get respons
 			'Access-Control-Allow-Origin': '*',
         }
     }).then(
-        response => response.json()
-    ).then( 
+        response => {
+	    console.log(response.status, response.statusText);
+	    return response.json();
+    }).then( 
        response => console.log(JSON.stringify(response))
     ).catch(error => {
 	    console.log(error);
