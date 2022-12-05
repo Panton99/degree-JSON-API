@@ -35,7 +35,7 @@ function display(data) {
    	 <td>${row.School} </td>
    	 <td>${row.Program/Major}</td>
    	 <td>${row.Type}</td> 
-   	 <td>${row.Year conferred}</td>          
+   	 <td>${row.Yearconferred}</td>          
 </tr>`;
     }
 	document.getElementById("data").innerHTML = table;
