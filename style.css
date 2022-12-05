@@ -6,7 +6,8 @@
 }
 
 #data {
-    border-bottom: 2px solid #737879; 
+    border-bottom: 2px solid #737879;
+    margin-left: 20px;
 }
 
 #button-submit {
