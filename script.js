@@ -11,7 +11,7 @@ async function getData(){ //create fetch and get respons
     ).then(
        response => {
 	       console.log(JSON.stringify(response));
-	       console.log('status: ' + response.status);
+	       console.log('status: ' + response.statusCode);
        }
 	
     ).catch(error => {
