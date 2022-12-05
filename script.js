@@ -17,4 +17,4 @@ async function getData(){
 }
 
 //click -event occurs
-document.getElementById('button-submit').addEventListener('click', getData());
+// document.getElementById('button-submit').addEventListener('click', getData());
