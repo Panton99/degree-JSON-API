@@ -10,12 +10,9 @@ async function getData(){
        response => console.log(JSON.stringify(response))
     )
     .catch(error => {
-        if(error == "server") {
-            return console.log(error);
-        }
-    })
-
+	    console.log(error)
+    });
 }
 
-
-getData();
+//click -event occurs
+document.getElementById("button").addEventListener('click', getData);
