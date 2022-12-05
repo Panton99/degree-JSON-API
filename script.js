@@ -37,5 +37,6 @@ function display(data) {
    	 <td>${row.Type}</td> 
    	 <td>${row.Yearconferred}</td>          
 </tr>`;
+	document.getElementById("data").innerHTML = table;
     }
 
