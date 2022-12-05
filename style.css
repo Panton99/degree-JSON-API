@@ -1,0 +1,52 @@
+
+:root {
+    background-color: pink;
+    font-size: 19px;
+    color:rgba(54, 54, 143, 0.952);
+}
+.form, h1 {
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+.school {
+    margin-bottom: 15px;
+}
+
+input {
+    cursor: pointer;
+}
+
+.status label {
+    display: inline-block;
+}
+
+.form label {
+    display: inline-block;
+    width: 300px;
+}
+.form div {
+    margin-bottom: 25px;
+}
+
+#button-submit {
+    display: block;
+    background-color: rgb(90, 38, 138);
+    border: none;
+    color: snow;
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#button-submit:hover {
+    display: block;
+    background-color: rgb(156, 65, 242);
+    border: none;
+    color: pink;
+    width: 80px;
+    height: 25px;
+}
+
+.error {
+    color: red;
+}
