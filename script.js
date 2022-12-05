@@ -11,10 +11,10 @@ async function getData(){ //create fetch and get respons
 	    //get the status and status text on console
 	    console.log(response.status, response.statusText);
 	    return response.json();
-    }).then( 
-       response => console.log(JSON.stringify(response))
-    ).then(
-    	display(response)
+    }).then( {
+       response => console.log(JSON.stringify(response));
+	display(response);
+}
     ).catch(error => {
 	    console.log(error);
     });
