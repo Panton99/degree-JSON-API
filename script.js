@@ -14,7 +14,6 @@ async function getData(){ //create fetch and get respons
     }).catch(error => {
 	    console.log(error);
     });
-    console.log('Status: ' + response.status);
 }
 
 
