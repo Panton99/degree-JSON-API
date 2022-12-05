@@ -1,6 +1,6 @@
 
 
-async function getData(){
+ function getData(){
     const response = await fetch('https://degree-json-api.netlify.app/degrees.json', {
         headers:{
             'Content-Type': 'application/degrees.json; charset=utf-8',
@@ -17,4 +17,4 @@ async function getData(){
 }
 
 //click -event occurs
-document.getElementById('button-submit').addEventListener('click', getData);
+document.getElementById('button-submit').addEventListener('click', getData());
