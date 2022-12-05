@@ -14,5 +14,5 @@ async function getData(){ //create fetch and get response
     .catch(error => {
 	    console.log(error);
     });
-	document.getElementById("data").textContent = JSON.stringify(response, undefined, 2);
+	document.getElementById("data").textContent = JSON.stringify(JSON.parse(response), undefined, 2);
 }
