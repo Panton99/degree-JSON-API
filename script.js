@@ -7,21 +7,17 @@ async function getData(){ //create fetch and get response
 			'Access-Control-Allow-Origin': '*',
         }
     }).then(
-        response => response.json()
+        response => {
+	if (response.status >= 400 && response.status < 600) {
+      		throw new Error("Error: from server");
+    	}
+	response.json()}
     ).then(
        response => console.log(JSON.stringify(response))
     )
     .catch(error => {
 	    console.log(error);
     });
-	printData(response);
 }
 
-function printData(data) {
-    var print = document.getElementById("data");
-    for (var i = 0; i < data.length; i++) {
-       var element = document.createElement("element");
-       element.innerHTML = 'University: ' + data[i].School + data[i].Type;
-       print.appendChild(element);
-    }
-}
+
