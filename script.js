@@ -21,7 +21,7 @@ function printData(data) {
     var print = document.getElementById("data");
     for (var i = 0; i < data.length; i++) {
        var element = document.createElement("element");
-       element.innerHTML = 'University: ' + data[i].School + ', Program/Major: ' + data[i].Program/Major + ', Type: ' + data[i].Type + ', Year conferred: ' + data[i].Year conferred;
+       element.innerHTML = 'University: ' + data[i].School + data[i].Type;
        print.appendChild(element);
     }
 }
