@@ -1,6 +1,6 @@
 
 
- function getData(){
+async function getData(){
     const response = await fetch('https://degree-json-api.netlify.app/degrees.json', {
         headers:{
             'Content-Type': 'application/degrees.json; charset=utf-8',
