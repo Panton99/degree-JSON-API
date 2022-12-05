@@ -10,7 +10,7 @@ async function getData(){
        response => console.log(JSON.stringify(response))
     )
     .catch(error => {
-	    console.log(error)
+	    console.log(error);
     });
 }
 
