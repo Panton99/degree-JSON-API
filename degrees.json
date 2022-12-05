@@ -1,0 +1,21 @@
+{ "Degrees": [
+    {
+    "School": "Korea University",
+    "Program/Major": "Biomedical Science",
+    "Type": "BS",
+    "Year conferred": "2017"
+    }, 
+    {
+    "School": "Seounl National University",
+    "Program/Major": "Environmental Science",
+    "Type": "MPH",
+    "Year conferred": "2019"
+    },
+    {
+        "School": "Boston University",
+        "Program/Major": "Computer Science",
+        "Type": "MS",
+        "Year conferred": "2023"
+    }
+    ]
+}
