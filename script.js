@@ -10,11 +10,11 @@ async function getData(){ //create fetch and get response
         response => response.json()
     ).then(
        response => console.log(JSON.stringify(response))
-       printData(response);
     )
     .catch(error => {
 	    console.log(error);
     });
+	printData(response);
 }
 
 function printData(data) {
