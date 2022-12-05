@@ -8,6 +8,7 @@ async function getData(){ //create fetch and get respons
         }
     }).then(
         response => {
+	    //get the status and status text on console
 	    console.log(response.status, response.statusText);
 	    return response.json();
     }).then( 
