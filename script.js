@@ -7,11 +7,7 @@ async function getData(){ //create fetch and get response
 			'Access-Control-Allow-Origin': '*',
         }
     }).then(
-        response => {
-	if (response.status >= 400 && response.status < 600) {
-      		throw new Error("Error: from server");
-    	}
-	response.json()}
+        response => response.json()
     ).then(
        response => console.log(JSON.stringify(response))
     )
