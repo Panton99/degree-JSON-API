@@ -5,6 +5,10 @@
     color:rgba(54, 54, 143, 0.952);
 }
 
+#data {
+    border-bottom: 2px solid #737879; 
+}
+
 #button-submit {
     display: block;
     background-color: rgb(90, 38, 138);
